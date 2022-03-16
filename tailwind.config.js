@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      fuschia: '#ff00a3'
+    }
   },
   plugins: [],
 }

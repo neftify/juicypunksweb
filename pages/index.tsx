@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
       <div className="flex min-h-screen flex-col items-center justify-center py-2">
         <Head>
-          <title>Juicypunks</title>
+          <title>Juicy Punk</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
@@ -133,7 +133,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         </section>
-        <section className="relative py-24 bg-white" style={{backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")', backgroundPosition: 'center'}}><div className="relative container px-4 mx-auto">
+        <section className="relative py-24 bg-white w-full" style={{backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")', backgroundPosition: 'center'}}><div className="relative container px-4 mx-auto">
           <div className="mb-16 text-center">
             <span className="inline-block py-px px-2 mb-4 text-xs leading-5 text-violet-500 bg-violet-100 font-medium uppercase rounded-9xl">Team</span>
             <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">The team behind the Juice.</h3>
@@ -201,7 +201,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         </section>
-        <section className="bg-white overflow-hidden" style={{backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")', backgroundPosition: 'center'}}><div className="container px-4 mx-auto">
+        <section className="bg-white overflow-hidden w-full" style={{backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")', backgroundPosition: 'center'}}><div className="container px-4 mx-auto">
           <div className="flex flex-wrap lg:items-center pt-24 pb-12 -mx-4">
             <div className="w-full md:w-3/4 px-4">
               <a className="block mb-8 max-w-max" href="#">
