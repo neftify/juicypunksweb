@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 
 const Home: NextPage = () => {
@@ -18,10 +19,10 @@ const Home: NextPage = () => {
               </a>
             </div>
             <div className="w-1/2 xl:w-1/3">
-              <ul className="hidden xl:flex xl:justify-center"><li className="mr-12"><a className="text-coolGray-500 hover:text-coolGray-900 font-medium" href="#">About</a></li>
-                <li className="mr-12"><a className="text-coolGray-500 hover:text-coolGray-900 font-medium" href="#">the Game</a></li>
-                <li className="mr-12"><a className="text-coolGray-500 hover:text-coolGray-900 font-medium" href="#">Docs</a></li>
-                <li><a className="text-coolGray-500 hover:text-coolGray-900 font-medium" href="#">Team</a></li>
+              <ul className="hidden xl:flex xl:justify-center"><li className="mr-12"><span className="text-coolGray-500 hover:text-coolGray-900 font-medium"><Link href="#about">About</Link></span></li>
+                <li className="mr-12"><span className="text-coolGray-500 hover:text-coolGray-900 font-medium"><Link href="#thegame">the Game</Link></span></li>
+                <li className="mr-12"><span className="text-coolGray-500 hover:text-coolGray-900 font-medium"><Link href="#">Docs</Link></span></li>
+                <li><span className="text-coolGray-500 hover:text-coolGray-900 font-medium"><Link href="#team">Team</Link></span></li>
               </ul></div>
             <div className="w-1/2 xl:w-1/3">
               <div className="hidden xl:flex items-center justify-end"><a className="inline-block py-2 px-4 mr-2 leading-5 text-coolGray-500 hover:text-coolGray-900 bg-transparent font-medium rounded-md" href="#">Leaderboards</a><a className="inline-block py-2 px-4 text-sm leading-5 text-violet-50 bg-violet-500 hover:bg-violet-600 font-medium focus:ring-2 focus:ring-violet-500 focus:ring-opacity-50 rounded-md" href="#">Launch App</a></div>
@@ -73,7 +74,7 @@ const Home: NextPage = () => {
           <div className="flex flex-wrap items-center -mx-4">
             <div className="w-full lg:w-1/2 px-4 mb-10">
               <div className="max-w-md">
-                <span className="inline-block py-px px-2 mb-4 text-xs leading-5 text-violet-500 bg-violet-100 font-medium uppercase rounded-9xl">ABOUT</span>
+                <span id="about" className="inline-block py-px px-2 mb-4 text-xs leading-5 text-violet-500 bg-violet-100 font-medium uppercase rounded-9xl">ABOUT</span>
                 <h3 className="mb-8 text-4xl md:text-5xl text-coolGray-900 font-bold tracking-tighter">Built by the team at Neftify.</h3>
                 <p className="text-lg md:text-xl text-coolGray-500 font-medium">Juicy Punk was created by three friends who set out to make a cool game, test their skills, and see how fast they could build.
                 </p>
@@ -105,7 +106,7 @@ const Home: NextPage = () => {
                 <img src="flex-ui-assets/images/how-it-works/stock.png" alt="" /></div>
             </div>
             <div className="w-full md:w-1/2 px-4">
-              <span className="inline-block py-px px-2 mb-4 text-xs leading-5 text-violet-500 bg-violet-100 font-medium uppercase rounded-full shadow-sm">the game</span>
+              <span id="thegame" className="inline-block py-px px-2 mb-4 text-xs leading-5 text-violet-500 bg-violet-100 font-medium uppercase rounded-full shadow-sm">the game</span>
               <h2 className="mb-12 text-4xl md:text-5xl leading-tight font-bold tracking-tighter">An endless runner where the objective is to collect $JUICE to unlock levels.</h2>
               <div className="flex flex-wrap -mx-4 text-center md:text-left">
                 <div className="w-full md:w-1/2 px-4 mb-8">
@@ -135,7 +136,7 @@ const Home: NextPage = () => {
         </section>
         <section className="relative py-24 bg-white w-full" style={{backgroundImage: 'url("flex-ui-assets/elements/pattern-white.svg")', backgroundPosition: 'center'}}><div className="relative container px-4 mx-auto">
           <div className="mb-16 text-center">
-            <span className="inline-block py-px px-2 mb-4 text-xs leading-5 text-violet-500 bg-violet-100 font-medium uppercase rounded-9xl">Team</span>
+            <span id="team" className="inline-block py-px px-2 mb-4 text-xs leading-5 text-violet-500 bg-violet-100 font-medium uppercase rounded-9xl">Team</span>
             <h3 className="mb-4 text-3xl md:text-5xl leading-tight text-coolGray-900 font-bold tracking-tighter">The team behind the Juice.</h3>
             <p className="text-lg md:text-xl text-coolGray-500 font-medium">We're Neftify Media, a sister company of Neftify.</p>
           </div>
@@ -208,9 +209,9 @@ const Home: NextPage = () => {
                 <img className="h-12" src="images/Untitled-Artwork.png" alt="" /></a>
               <p className="mb-12 text-base md:text-lg text-coolGray-400 font-medium md:max-w-sm">We make cool shit.</p>
               <div className="mb-12 md:mb-0 flex flex-wrap -mx-3 md:-mx-6">
-                <div className="w-full md:w-auto p-3 md:py-0 md:px-6"><a className="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">About</a></div>
-                <div className="w-full md:w-auto p-3 md:py-0 md:px-6"><a className="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">Team</a></div>
-                <div className="w-full md:w-auto p-3 md:py-0 md:px-6"><a className="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">Docs</a></div>
+                <div className="w-full md:w-auto p-3 md:py-0 md:px-6"><span className="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium"><Link href="#about">About</Link></span></div>
+                <div className="w-full md:w-auto p-3 md:py-0 md:px-6"><span className="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium"><Link href="#team">Team</Link></span></div>
+                <div className="w-full md:w-auto p-3 md:py-0 md:px-6"><span className="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium"><Link href="#">Docs</Link></span></div>
                 <div className="w-full md:w-auto p-3 md:py-0 md:px-6"><a className="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">Discord</a></div>
                 <div className="w-full md:w-auto p-3 md:py-0 md:px-6"><a className="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">Twitter</a></div>
                 <div className="w-full md:w-auto p-3 md:py-0 md:px-6"><a className="inline-block text-coolGray-500 hover:text-coolGray-600 font-medium" href="#">Github</a></div>
