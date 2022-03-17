@@ -84,21 +84,15 @@ const Home: NextPage = () => {
               <div className="w-1/2 xl:w-1/3">
                 <div className="hidden items-center justify-end xl:flex">
                   <a
-                    className="text-coolGray-500 hover:text-coolGray-900 bg-transparent mr-2 inline-block rounded-md py-2 px-4 font-medium leading-5"
-                    href="#"
-                  >
-                    Leaderboards
-                  </a>
-                  <a
                     className="text-violet-50 bg-violet-500 hover:bg-violet-600 focus:ring-violet-500 inline-block rounded-md py-2 px-4 text-sm font-medium leading-5 focus:ring-2 focus:ring-opacity-50"
                     href="#"
                   >
-                    Launch App
+                    Connect Wallet
                   </a>
                 </div>
               </div>
             </div>
-            <button className="navbar-burger self-center xl:hidden">
+            <button className="navbar-burger self-center xl:hidden hidden">
               <svg
                 width={35}
                 height={35}
@@ -154,24 +148,6 @@ const Home: NextPage = () => {
                       </span>
                     </li>
                   </ul>
-                  <div className="flex flex-wrap">
-                    <div className="mb-2 w-full">
-                      <a
-                        className="text-coolGray-500 hover:text-coolGray-900 bg-transparent inline-block w-full rounded-md py-2 px-4 text-center text-sm font-medium leading-5"
-                        href="#"
-                      >
-                        Log In
-                      </a>
-                    </div>
-                    <div className="w-full">
-                      <a
-                        className="text-white bg-violet-500 hover:bg-violet-600 focus:ring-violet-500 inline-block w-full rounded-md py-2 px-4 text-center text-sm font-medium leading-5 focus:ring-2 focus:ring-opacity-50"
-                        href="#"
-                      >
-                        Sign Up
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </nav>
               <a className="navbar-close absolute top-5 right-3 p-4" href="#">
@@ -209,14 +185,6 @@ const Home: NextPage = () => {
                       href="#"
                     >
                       Connect Wallet
-                    </a>
-                  </div>
-                  <div className="w-full py-1 md:w-auto md:py-0">
-                    <a
-                      className="text-coolGray-800 bg-white hover:bg-coolGray-100 focus:ring-coolGray-200 border-coolGray-200 inline-block w-full rounded-md border py-5 px-7 text-center text-base font-medium leading-4 shadow-sm focus:ring-2 focus:ring-opacity-50 md:text-lg"
-                      href="#"
-                    >
-                      Leaderboards
                     </a>
                   </div>
                 </div>
